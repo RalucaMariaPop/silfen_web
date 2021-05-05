@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
 body {
   margin: 0;
+  font-family: 'Manrope', sans-serif;
 }
 header {
   display: grid;
@@ -403,7 +405,7 @@ footer {
 }
 .copyright p {
   margin-left: 1rem;
-  color: darkgray;
+  color: black;
   margin-top: 2rem;
   font-size: 0.9rem;
 }
