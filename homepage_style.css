@@ -607,3 +607,9 @@ button:hover {
     border-radius: .5rem;
     margin-top: 3rem;
 }
+
+/*BAG*/
+.bag img{
+  width: 300px;
+  height: 300px;
+}

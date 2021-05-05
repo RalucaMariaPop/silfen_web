@@ -17,6 +17,7 @@ main {
 }
 
 body {
+    margin: 0;
     overflow: auto;
     min-height: 100vh;
     width: 100%;
@@ -38,6 +39,7 @@ button{
     border-radius: 0.5rem;
     margin-left: 15rem;
     margin-top: 3rem;
+    margin-bottom: 5rem;
     box-shadow: 5px 10px gray;
     
 }
@@ -49,3 +51,179 @@ button:hover{
     display: flex;
     flex-direction: row;
 }
+/*HEADER*/
+header {
+    display: grid;
+    grid-template:
+      "spl sl a"
+      "spl nav .";
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+  
+  .silfenPlayLogo {
+    width: 74px;
+    height: 100px;
+    grid-area: spl;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+  }
+  .silfenLogo {
+    width: 150px;
+    height: 20px;
+    grid-area: sl;
+    margin-top: 1rem;
+    margin-left: 30rem;
+  }
+  .assets {
+    grid-area: a;
+    margin-top: 1rem;
+  }
+  nav {
+    grid-area: nav;
+    margin-left: 8rem;
+  }
+  .search {
+    width: 30px;
+    height: 30px;
+    color: darkgray;
+    margin-left: 10rem;
+  }
+  .favourite {
+    width: 30px;
+    height: 30px;
+    color: darkgray;
+    margin-left: 2rem;
+  }
+  .profile {
+    width: 30px;
+    height: 30px;
+    color: darkgray;
+    margin-left: 1rem;
+  }
+  .cart {
+    width: 30px;
+    height: 30px;
+    color: darkgray;
+    margin-left: 1rem;
+  }
+  ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  .nav {
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+  }
+  
+  ul li {
+    display: block;
+    position: relative;
+    float: left;
+  }
+  li ul {
+    display: none;
+  }
+  ul li a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    white-space: nowrap;
+    color: black;
+  }
+  ul li a:hover {
+    color: gray;
+  }
+  li:hover > ul {
+    display: block;
+    position: absolute;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px gray;
+  }
+  li:hover li {
+    float: none;
+  }
+  li:hover a {
+    color: black;
+  }
+  li:hover li a:hover {
+    color: gray;
+  }
+  ul:before,
+  ul:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+  
+  ul:after {
+    clear: both;
+  }
+
+  /*Footer*/
+  footer {
+    background-color: #aed5b2;
+    padding: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .logo {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .silfen_logo {
+    width: 100px;
+    height: 130px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  .pay {
+    width: 50px;
+    height: 30px;
+    margin-top: 3rem;
+  }
+  .copyright {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .copyright p {
+    margin-left: 1rem;
+    color: black;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .f {
+    text-align: center;
+  }
+  #email {
+    padding: 0.5rem;
+    text-align: center;
+    border: none;
+    margin-bottom: 1.5rem;
+  }
+  #check {
+    border: none;
+    margin-bottom: 1.5rem;
+  }
+  .inputs button {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: none;
+  }
